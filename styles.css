@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    font-family: "Lato", serif; 
+    background-color: black;
+
+}
+
+/* ... Your existing styles ... */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    /* Adjust font size for smaller screens */
+    .aboutme h1 {
+        font-size: 36px;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .aboutme {
+        padding: 20px; /* Increase padding to add spacing */
+    }
+
+    .aboutme p,
+    .aboutme ul,
+    .aboutme li {
+        margin: 8px; /* Adjust margin for spacing between elements */
+    }
+}
+
+/*Hero image*/
+.hero-image {
+    background-image: url("/images/vid7.gif");
+    height: 100vh;
+
+    /*positioning*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section1 {
+
+    scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+
+}
+
+.section1 h1 {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 14px 0px 0px 16px;
+    float: left;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    display: inline;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: 8px 16px 0px 0px;
+}
+
+/* Change the link color to red on hover */
+li a:hover {
+    background-color: red;
+}
+
+
+
+.section2 {
+    scroll-snap-align: start;
+    background: url("/images/profile.JPG");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.aboutme {
+    width: 65%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F6F5F1;
+    background: rgba(255, 255,255,0.1);
+    backdrop-filter: blur(50px);
+    flex-wrap: wrap;
+
+
+}
+
+.aboutme h1,
+.aboutme p,
+.aboutme ul,
+.aboutme li {
+    color: white;
+    background-color: transparent;
+    margin: 10px;
+    padding:10px;
+}
+
+.aboutme h1 {
+    font-size: 5vw;
+}
+
+
+.aboutme li {
+    display: flex;
+    float: left;
+    font-size: 1em;
+}
+
+#green {
+    background-color: #21AD2A;
+    border-radius: 15px;
+}
+
+#blue {
+    
+    background-color: #0450E8;
+    border-radius: 15px;
+    
+}
+
+#red {
+    background-color: #D92F1E;
+    border-radius: 15px;
+}
+
+#purple {
+    background-color: #6204E8;
+    border-radius: 15px;
+}
+
+#pink {
+    background-color: #E804E1;
+    border-radius: 15px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    scroll-snap-align: start;
+
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+
+}
+
+
+
+
+
+
+.section3 form {
+    width: 670px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 26px 20px 50 px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.section3 form h1 {
+    color:white;
+    font-weight: 500;
+    margin-top:20px;
+    width:500px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.section3 form input {
+    width: 290px;
+    height:40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+}
+
+.section3 form input::placeholder {
+    color:white;
+}
+
+.section3 form #firstName,
+.section3 form #email,
+.section3 form #mobile,
+.section3 form #lastName {
+    margin-left: 30px;
+}
+
+.section3 form h4 {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    width: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section3 form textarea {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    min-height:80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.section3 form #button {
+    border: none;
+    background: white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    width: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.section3 form #button:hover {
+    background-color: red;
+    opacity: 0.7;
+}
