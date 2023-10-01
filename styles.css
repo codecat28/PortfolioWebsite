@@ -39,6 +39,7 @@
     position: relative;
 }
 
+/* section 1 stuff */
 .section1 {
 
     scroll-snap-align: start;
@@ -86,7 +87,7 @@ li a:hover {
     background-color: red;
 }
 
-
+/* section2 stuff */
 
 .section2 {
     scroll-snap-align: start;
@@ -167,6 +168,8 @@ li a:hover {
     border-radius: 15px;
 }
 
+/* section 3 stuff */
+
 .section3 {
     display: flex;
     justify-content: center;
@@ -183,6 +186,7 @@ li a:hover {
 
 }
 
+/* container */
 .container {
     scroll-snap-type: y mandatory;
     min-height:100vh;
@@ -190,6 +194,7 @@ li a:hover {
     flex-direction: column;
 }
 
+/* Projects section*/
 .projects {
     min-height: 100vh;
     color: white;
@@ -201,11 +206,7 @@ li a:hover {
 
 }
 
-
-
-
-
-
+/* Section 3 form */
 .section3 form {
     width: 670px;
     height:400px;
